@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Romy.com - Registration</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitle">Sign in to Your Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="emailForm">Email</label>
+                <input type="email" class="form-control" id="emailForm">
+              </div>
+              <div class="form-group">
+                <label for="passwordForm">Password</label>
+                <input type="password" class="form-control" id="passwordForm" aria-describedby="passwordHelp">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+              <small id="passwordHelp" class="form-text text-muted">Forgot your password? <a href="#">Click here</a></small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <a href="index.html" class="navbar-brand">
+		romy.com
+	</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="local.html">Rome</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plans.html">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-primary ml-md-2" href="registration.html">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">PLAN YOUR DREAM TRIP</span>
+        <h2 class="display-4 text-primary">SIGN UP</h2>
+      </div>
+
+      <div class="row">
+        <form class="col-lg-6" action="#">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCPF">CPF</label>
+              <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Access Password">
+            </div>
+            <div class="form-group col-12">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Street number, street name, and neighborhood.">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputState">State</label>
+              <select class="form-control">
+                <option>Select State</option>
+                <option>Rio de Janeiro</option>
+                <option>São Paulo</option>
+                <option>Paraná</option>
+                <option>Ceará</option>
+                <option>Acre</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3 col-6">
+              <label for="inputCEP">ZIP Code</label>
+              <input type="text" class="form-control" id="inputCEP" placeholder="xxxxx-xxx">
+            </div>
+          </div>
+          <div class="bg-light rounded box-shadow p-3 form-group">
+            <h2 class="h6 text-primary">PAYMENT METHOD</h2>
+            <nav class="nav btn-group mb-3" id="paymentMethod" role="tablist">
+              <button type="button" class="btn btn-secondary btn-sm active" id="nav-card-tab" data-toggle="tab" href="#nav-card" role="tab" aria-controls="nav-card" aria-selected="true">Credit Card</button>
+              <button type="button" class="btn btn-secondary btn-sm" id="nav-bank-tab" data-toggle="tab" href="#nav-bank" role="tab" aria-controls="nav-bank" aria-selected="false">Bank Slip</button>
+            </nav>
+            <div class="tab-content" id="paymentMethodContent">
+              <div class="tab-pane fade show active" id="nav-card" role="tabpanel" aria-labelledby="nav-card-tab">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCardName">Name on Card</label>
+                    <input type="text" class="form-control" id="inputCardName" placeholder="Name printed on the card">
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputCardMonth">Month</label>
+                    <select id="inputCardMonth" class="form-control">
+                      <option>Expire month...</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputCardYear">Year</label>
+                    <select id="inputCardYear" class="form-control">
+                      <option>Expire year...</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="inputCardNumber" placeholder="5555 5555 5555 5555">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputCardCode">Security Code</label>
+                    <input type="text" class="form-control" id="inputCardCode" placeholder="XXX">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-bank" role="tabpanel" aria-labelledby="nav-bank-tab">
+                <p class="lead">Click "Subscribe" and we will send a bank slip to your email.</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">I agree to the <a href="#">Terms and Conditions</a>.
+            </label>
+          </div>
+          <button class="btn btn-primary btn-lg">Subscribe</button>
+        </form>
+
+        <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">PAGES</h4>
+            <ul class="list-unstyled">
+              <li><a href="planos.html">Plans</a></li>
+              <li><a href="inscricao.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCATIONS</h4>
+            <ul class="list-unstyled">
+              <li><a href="local.html">Rome</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">CONTACT INFORMATION</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>Romy.com@Romy.com.com</li>
+              <li>+99 99999-9999</li>
+              <li>Mon-Fri, 8 AM - 6 PM</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">SOCIAL MEDIA</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a class="btn btn-outline-secondary btn-block btn-sm mb-2 btn-fixed-width" href="#">Facebook</a>
+              </li>
+              <li>
+                <a class="btn btn-outline-secondary btn-block btn-sm mb-2 btn-fixed-width" href="#">Twitter</a>
+              </li>
+              <li>
+                <a class="btn btn-outline-secondary btn-block btn-sm mb-2 btn-fixed-width" href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-primary text-center text-white py-3">
+      <p class="mb-0">Romy.com © 2019. Some rights reserved.</p>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
